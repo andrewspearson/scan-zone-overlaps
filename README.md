@@ -8,7 +8,7 @@ scan-zone-overlaps.py finds Tenable.SC Scan Zones with overlapping IP ranges.
 ```
 $ git clone https://github.com/andrewspearson/scan-zone-overlaps.git /usr/local/bin/scan-zone-overlaps
 $ python3 -m venv /usr/local/bin/scan-zone-overlaps/venv
-$ . /usr/local/bin/scan-smuggler/venv/bin/activate
+$ . /usr/local/bin/scan-zone-overlaps/venv/bin/activate
 $ pip install -r requirements.txt
 $ deactivate
 ```
