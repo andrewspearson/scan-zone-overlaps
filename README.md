@@ -2,21 +2,32 @@
 scan-zone-overlaps.py finds Tenable.SC Scan Zones with overlapping IP ranges.
 ## Requirements
 * python3
-* [pyTenable](https://github.com/tenable/pyTenable)
 ## Installation
 ### Python virtual environment
 ```
 $ git clone https://github.com/andrewspearson/scan-zone-overlaps.git /usr/local/bin/scan-zone-overlaps
-$ python3 -m venv /usr/local/bin/scan-zone-overlaps/venv
-$ . /usr/local/bin/scan-zone-overlaps/venv/bin/activate
-$ pip install -r requirements.txt
-$ deactivate
+```
+Or
+```
+$ curl https://raw.githubusercontent.com/andrewspearson/scan-zone-overlaps/main/scan-zone-overlaps.py -O
 ```
 ## Usage
-### Python virtual environment
+View the help menu
 ```
-$ cd /usr/local/bin
-$ ./venv/bin/python scan-zone-overlaps.py
+$ python3 scan-zone-overlaps.py -h
+usage: scan-zone-overlaps.py [-h] [-p 127.0.0.1:8080] [-i]
+
+Tool to uncover overlaps in Tenable.SC Scan Zones
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -p 127.0.0.1:8080, --proxy 127.0.0.1:8080
+                        HTTPS proxy
+  -i, --insecure        Disable SSL verification
+```
+Run the script
+```
+$ python3 scan-zone-overlaps.py -i
 tenable.sc IP or hostname: tsc.corp.local
 Username: admin
 Password: 
