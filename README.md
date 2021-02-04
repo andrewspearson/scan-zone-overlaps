@@ -3,7 +3,6 @@ scan-zone-overlaps.py finds Tenable.SC Scan Zones with overlapping IP ranges.
 ## Requirements
 * python3
 ## Installation
-### Python virtual environment
 ```
 $ git clone https://github.com/andrewspearson/scan-zone-overlaps.git /usr/local/bin/scan-zone-overlaps
 ```
